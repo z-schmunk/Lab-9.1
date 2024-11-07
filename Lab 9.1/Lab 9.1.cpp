@@ -38,5 +38,7 @@ int main() {
     }
     cout << endl;
 
+    cout << "First and last: " << arr[0] << " " << arr[9] << endl;
+
     return 0;
 }

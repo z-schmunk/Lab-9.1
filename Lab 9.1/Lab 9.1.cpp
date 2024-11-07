@@ -12,23 +12,29 @@ int main() {
         arr[i] = rand() % 9000 + 1000;
     }
 
-    cout << "The random integers:";
+    cout << "The random integers: ";
     for (int i = 0; i < SIZE; ++i) {
-        cout << arr[i] << endl;
+        cout << arr[i] << " ";
     }
     cout << endl;
 
-    cout << "Even indices:";
+    cout << "Even indices: ";
     for (int i = 0; i < SIZE; i += 2) {
         cout << arr[i] << " ";
     }
     cout << endl;
 
-    cout << "Even values:";
+    cout << "Even values: ";
     for (int i = 0; i < SIZE; ++i) {
         if (arr[i] % 2 == 0) {
             cout << arr[i] << " ";
         }
+    }
+    cout << endl;
+
+    cout << "Reverse order: ";
+    for (int i = 9; i >= 0; --i) {
+        cout << arr[i] << " ";
     }
     cout << endl;
 

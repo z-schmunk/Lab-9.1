@@ -18,9 +18,17 @@ int main() {
     }
     cout << endl;
 
-    cout << "Elements at even indices:\n";
-    for (int i = 0; i < 10; i += 2) {
+    cout << "Even indices:";
+    for (int i = 0; i < SIZE; i += 2) {
         cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    cout << "Even values:";
+    for (int i = 0; i < SIZE; ++i) {
+        if (arr[i] % 2 == 0) {
+            cout << arr[i] << " ";
+        }
     }
     cout << endl;
 
